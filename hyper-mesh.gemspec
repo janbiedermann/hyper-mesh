@@ -29,7 +29,7 @@ Gem::Specification.new do |s|
     s.add_dependency 'hyper-component', '>= 0.12.3'
 
     s.add_development_dependency 'bundler', '~> 1.8'
-    s.add_development_dependency 'rake'
+    s.add_development_dependency 'rake', '~> 10.0'
     s.add_development_dependency 'rspec-rails'
     s.add_development_dependency 'timecop'
 
@@ -73,8 +73,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency 'rspec-collection_matchers'
       s.add_development_dependency 'database_cleaner'
       s.add_development_dependency 'capybara'
-      s.add_development_dependency 'selenium-webdriver'
-      s.add_development_dependency 'phantomjs', '>= 2.1.1.0'
+      s.add_development_dependency 'selenium-webdriver', '< 3'
       s.add_development_dependency 'poltergeist'
       s.add_development_dependency 'spring-commands-rspec'
       s.add_development_dependency 'chromedriver-helper'
