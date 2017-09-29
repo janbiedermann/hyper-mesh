@@ -4,7 +4,7 @@ language: ruby
 rvm:
   - ruby
 before_install:
-  - locale
+  - sudo systemsetup -settimezone Europe/Berlin
   - brew update
   - brew upgrade
   - brew install mysql
@@ -17,4 +17,4 @@ before_script:
   - rails db:setup
   - cd ../../
   - bundle update --jobs=3 --retry=3
-script: bundle exec rake spec
+script: bundle exec rspec
