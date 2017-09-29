@@ -3,10 +3,9 @@ osx_image: xcode9
 language: ruby
 rvm:
   - ruby
-services:
-  - mysql
 before_install:
   - brew install mysql
+  - brew services start mysql
   - gem install bundler
 before_script:
   - cd spec/test_app
