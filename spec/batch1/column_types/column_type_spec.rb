@@ -47,7 +47,7 @@ describe "column types on client", js: true do
           Timex.new(Time.parse('2001-01-01T00:00:00.000-00:00').localtime)
         end
         def parse(s)
-          Timex.new(Time.parse(s))
+          Timex.new(Time.parse(s).localtime)
         end
       end
     end
