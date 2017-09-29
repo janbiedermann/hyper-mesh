@@ -5,6 +5,8 @@ rvm:
   - ruby
 before_install:
   - locale
+  - brew update
+  - brew upgrade
   - brew install mysql
   - brew services start mysql
   - brew install phantomjs
