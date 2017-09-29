@@ -5,7 +5,9 @@ rvm:
   - ruby
 services:
   - mysql
-before_install: gem install bundler
+before_install:
+  - brew install mysql
+  - gem install bundler
 before_script:
   - cd spec/test_app
   - bundle install
