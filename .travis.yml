@@ -6,6 +6,7 @@ rvm:
 before_install:
   - brew install mysql
   - brew services start mysql
+  - brew install phantomjs
   - gem install bundler
 before_script:
   - cd spec/test_app
